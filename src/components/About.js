@@ -4,18 +4,17 @@ import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
 // import components below
-import About from './components/About';
 
-const App = () => (
+const About = () => (
   <div>
     <div>
-      <h1>Hello World!</h1>
-      <Link to="/about">About</Link>
+      <h1>About</h1>
+      <Link to="/">Home</Link>
     </div>
     <div>
-      <Route path="/about" component={About} />
+      <Route exact path="/" />
     </div>
   </div>
 );
 
-export default App;
+export default About;
