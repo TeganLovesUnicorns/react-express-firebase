@@ -1,0 +1,6 @@
+public/bundle.js
+functions/index.js
+**/webpack/*
+node_modules
+**/public/*
+**/bin/*
