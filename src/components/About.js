@@ -1,19 +1,11 @@
-// import dependancies below
-
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
-
-// import components below
 
 const About = () => (
-  <div>
-    <div>
-      <h1>About</h1>
-      <Link to="/">Home</Link>
-    </div>
-    <div>
-      <Route exact path="/" />
-    </div>
+  <div className="about">
+    <h2>About</h2>
+    <p>Eclipse Lighting Solutions was started by Daniel Rehbein as a way to handle his growing client list for lighting and production design.</p>
+    <p>At Eclipse, we strive to exceed our client's expectations. Whether it is a large production or a club tour, we aim to please.</p>
+    <p>Check out some of our work.</p>
   </div>
 );
 

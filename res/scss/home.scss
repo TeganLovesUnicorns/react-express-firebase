@@ -1,0 +1,47 @@
+// Map with much breakpoints
+$breakpoints: (
+  'xs'  : 375px,
+  'sm'  : 740px,
+  'md'  : 980px,
+  'lg'  : 1200px,
+  'xl'  : 1800px
+);
+
+// Respond-To Mixin
+@mixin respond-to($breakpoint) {
+  // Retrieves the value from the key
+  $value: map-get($breakpoints, $breakpoint);
+
+  // If the key exists in the map
+  @if $value != null {
+    // Prints a media query based on the value
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+
+
+.home {
+  h1 {
+    text-align: center;
+  }
+  img {
+    height: auto;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include respond-to(xs) {
+      width: 100%;
+    }
+  }
+}
