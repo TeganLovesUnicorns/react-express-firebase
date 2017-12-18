@@ -2,6 +2,7 @@ import * as React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import express from 'express';
+// require('images-require-hook')(['jpg', 'jpeg', 'png', 'gif', 'svg'], './src/images');
 import * as fs from 'fs';
 import * as functions from 'firebase-functions';
 import path from 'path';
