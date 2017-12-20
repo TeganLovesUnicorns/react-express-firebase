@@ -15,7 +15,7 @@ $breakpoints: (
   // If the key exists in the map
   @if $value != null {
     // Prints a media query based on the value
-    @media (max-width: $value) {
+    @media screen and (max-width: $value + 1) {
       @content;
     }
   }
