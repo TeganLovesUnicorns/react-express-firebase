@@ -16,7 +16,6 @@ const Home = () => (
       </Carousel.Item>
     </Carousel>
   </div>
-  
 );
 
 export default Home;
