@@ -33,15 +33,17 @@ $breakpoints: (
   h1 {
     text-align: center;
   }
-  img {
+  .carousel {
     height: auto;
     width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    @include respond-to(md) {
+      width: 75%;
+    }
     @include respond-to(xs) {
       width: 100%;
-    }
+    }    
   }
 }
