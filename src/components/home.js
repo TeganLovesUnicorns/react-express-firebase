@@ -1,10 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Carousel } from 'react-bootstrap';
-import data from '../../res/imgdb/home.json';
+// import data from '../../res/imgdb/home.json';
+
+// const CarouselItem = props => (
+//   <Carousel.Item>
+//     <img width={750} height={500} alt={props.alt} src={props.src} />
+//   </Carousel.Item>
+// );
+
+CarouselItem.propTypes = {
+  alt: React.propTypes.string.isRequired,
+  src: React.propTypes.string.isRequired,
+}
 
 const Home = () => (
   <div className="home">
     <Carousel interval={5000}>
+      {/* <CarouselItem /> */}
       <Carousel.Item>
         <img width={750} height={500} alt="Amos Lee 1" src="https://firebasestorage.googleapis.com/v0/b/eclipse-lighting-solutions.appspot.com/o/img%2FAL1701.jpg?alt=media&token=e66b31ea-4dfb-4af4-ba1f-c9b885581b8a" />
       </Carousel.Item>

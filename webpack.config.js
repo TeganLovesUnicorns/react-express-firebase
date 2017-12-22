@@ -11,6 +11,7 @@ module.exports = [{
   devtool: 'source-map',
   entry: ['./src/index.js',
     './res/scss/main.scss',
+    './res/imgdb/home.json',
   ],
   module: {
     loaders: [
